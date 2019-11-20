@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  
+  <title>See I Can Read</title>
+  
+  
+  <link rel="stylesheet" href="Home&NavBar.css">
+  
+  
+	<div class="nav">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="books.html">Books</a></li>
+			<li><a href="coloring.html">Coloring</a></li>
+			<li><a href="orders.html">Orders</a></li>
+			<li><a href="links.html">Links</a></li>
+		</ul>
+	</div>
+	
+<script>
+	function makepage(src)
+		{
+			return "<html>\n" +
+			"<head>\n" +
+			"<title>Temporary Printing Window</title>\n" +
+			"<script>\n" +
+			"function step1() {\n" +
+			" setTimeout('step2()', 10);\n" +
+			"}\n" +
+			"function step2() {\n" +
+			" window.print();\n" +
+			" window.close();\n" +
+			"}\n" +
+			"</scr" + "ipt>\n" +
+			"</head>\n" +
+			"<body onLoad='step1()'>\n" +
+			"<img src='" + src + "'/>\n" +
+			"</body>\n" +
+			"</html>\n";
+		}
+	function printme(evt)
+		{
+			if (!evt) {
+			// Old IE
+			evt = window.event;
+		}
+	var image = evt.target;
+	if (!image) {
+		// Old IE
+		image = window.event.srcElement;
+	}
+	src = image.src;
+	link = "about:blank";
+	var pw = window.open(link, "_new");
+	pw.document.open();
+	pw.document.write(makepage(src));
+	pw.document.close();
+	}
+</script>
+	
+	
+	
+</head>
+
+
+
+<body>
+
+<div class="master">
+<div class="imagemaster">
+	
+		<img class="img-responsive" src="logo2.png" width="300" height="425" alt="See I Can Read" />
+
+	<h1> SEE I CAN READ</h1>
+	<h2>Coloring Pages</h2>
+
+
+<p>Friendly Alphabet Coloring Pages! Click on the image to print.</p>
+
+</div>
+</div>
+
+<p>
+<noscript>
+<b>You have JavaScript turned off.</b> So this won't work. That is to be expected.
+</noscript>
+<div class="color">
+	<img src="A.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="B.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="C.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="D.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="E.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="F.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="G.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="H.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="I.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="J.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="K.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="L.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="M.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="N.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="O.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="P.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="Q.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="R.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="S.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="T.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="U.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="V.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="W.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="X.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="Y.gif" width="200" height="150" onClick="printme(event)"/>
+	<img src="Z.gif" width="200" height="150" onClick="printme(event)"/>
+</div>	
+
+
+
+</body>
+</html>
